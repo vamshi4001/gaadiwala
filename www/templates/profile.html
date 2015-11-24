@@ -1,0 +1,50 @@
+<style>
+	.profile-item {
+	  text-align: center;
+	}
+
+	.profile-picture {
+	  border: 1px solid rgba(0, 0, 0, 0.25);
+	  padding: 3px;
+	  border-radius: 100%;
+	  -webkit-box-sizing: content-box;
+	  -moz-box-sizing: content-box;
+	  box-sizing: content-box;
+	  margin: 0 auto;
+	  width: 128px;
+	  height: 128px;
+	  overflow: hidden;
+	}
+
+	.profile-picture img {
+	  width: 128px;
+	  border-radius: 100%;
+	}
+
+	.profile-name {
+	  padding-top: 20px;
+	  font-size: x-large !important;
+	  font-weight: bold !important;
+	  text-transform: capitalize;
+	}
+	.platform-android h2, .platform-android .h2, .platform-override h2, .platform-override .h2{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+</style>
+<ion-view view-title="Profile">
+  <ion-content>
+    <div class="list card">
+        <ion-item class="profile-item">
+          <div class="profile-picture big-profile-picture">
+            <img src="img/profile.png">
+          </div>
+          <h2 class="profile-name dark">Vamshi Krishna</h2>
+          <div class="profile-info">#3, HSR Layout, Bangalore</div>
+        </ion-item>
+        <div class="item item-text-wrap">
+        	Vamshi is an enthusiastic front end developer, having worked on web and mobile technologies extensively.
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

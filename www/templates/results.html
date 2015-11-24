@@ -1,0 +1,67 @@
+<style>
+    .listitem{
+        margin-left: 25px;
+    }
+    .subheader{
+        font-weight: 700;
+        font-size: 14px;
+    }
+</style>
+  <ion-content>
+    <div class="card card--expand" ng-click="showDetails(123)">
+        <div class="item item-divider" style="background: url('http://www.medimarket.in/Images/Annual_Fitness_Plan.jpg') center / cover; color: white;">
+            <h2>Annual Fitness Plan</h2>
+        </div>
+        <div class="item item-text-wrap">
+            <h4>Description:</h4>
+            <p>
+                As much as we wish cancer was only a zodiac sign, the reality is far from it. Early diagnosis is the key to beating cancer. Avail of our "CanCer-Vive" package to take the first step toward awareness. Along with a prostate specific antigen (PSA) and an abdominal ultrasound, this kit encompasses liver function and other routine lab tests, plus dental and physician consultations.
+            </p>
+        </div>  
+        <div class="item item-text-wrap">
+            <h4>Line Items:</h4>
+            <ul>
+                <li ng-repeat="key in items" class="listitem subheader">
+                    {{key}} 
+                    <ul>
+                        <li ng-repeat="item in lineItems[key]" class="listitem">
+                            {{item.product_NAME}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="item item-text-wrap">
+            <h4>Instructions:</h4>
+            <ul> 
+                <li><i class="icon ion-android-send"></i> Health check process will take at least 3 to 4 hours, kindly plan accordingly.</li>
+                <li><i class="icon ion-android-send"></i> While you visit the centre, please carry a copy of this letter along with the Employee ID Card.</li>
+                <li><i class="icon ion-android-send"></i> Overnight fasting of 10 -12 hours is required. Report to medical center in empty stomach (only water can be consumed).</li>
+                <li><i class="icon ion-android-send"></i> Avoid smoking & consuming alcohol for a minimum of 12 hours before check-up.</li>
+                <li><i class="icon ion-android-send"></i> Carry urine and stool sample in a sterilized container which can be obtained from your nearest pharmacy.</li>
+                <li><i class="icon ion-android-send"></i> You are not required to make any payment at the medical centre, unless you undergo additional tests at your own discretion or as per recommendation by consulting physician.</li>
+                <li><i class="icon ion-android-send"></i> You may collect your original Medical Reports from the medical center. Scanned copy of Medical report will also be uploaded in the Medical repository on Mediassist port</li>
+            </ul>
+        </div>          
+        <div class="item item-avatar">
+            <img src="http://ionicframework.com/img/docs/spengler.jpg">
+            <h2>Rs. 1500/-</h2>
+            <p>(Exclusive of taxes)</p>
+        </div>
+
+        <div class="item item-body">                
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item" href="#">
+                <button class="button button-outline button-light" ng-click="showCart()"><i class="icon ion-android-cart"></i> Buy</button>
+            </a>
+            <a class="tab-item" href="#">
+                <button class="button button-outline button-light"><i class="icon ion-android-star"></i> Star</button>
+            </a>
+            <a class="tab-item" href="#">
+                <button class="button button-outline button-light"><i class="icon ion-android-share-alt"></i> Share</button>
+            </a>
+        </div>
+    </div>
+  </ion-content>
